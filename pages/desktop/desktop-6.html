@@ -5,25 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../../css/desktop.css" type="text/css">
 </head>
 
 <body>
   <div id="desktop">
     <div id="progress-bar">
-      <div id="progress" style="width: 34%"></div>
+      <div id="progress" style="width: 85%"></div>
     </div>
     <div>
-      <h2 id="p1"><a href=../index.html>likemypost.xyz</a></h2>
-      <h2 id="p2">34% complete</h2>
+      <h2 id="p1"><a href=desktop.html>likemypost.xyz</a></h2>
+      <h2 id="p2">85% complete</h2>
       <h2 id="p5"><a href="../pages/about.html">?</a></h2>
     </div>
     <div class="post">
       <h1 id="postContent"></h1>
     </div>
     <div>
-      <h2 id="p3">do you stand<br />by it?</h2>
-      <h2 id="p4">enter = yes<br />delete = no</h2>
+      <h2 id="p3">do you<br />care?</h2>
+      <h2 id="p4">enter = i don't<br />delete = i do</h2>
     </div>
   </div>
   <script>
@@ -42,7 +43,7 @@
 
     $(document).keydown(function(e) {
       if (e.which == 13) {
-        window.location = "desktop-4.html?post=" + value;
+        window.location = "success.html?post=" + value;
         return false;
       }
     });
