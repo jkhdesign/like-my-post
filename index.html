@@ -10,8 +10,18 @@
 </head>
 
 <body>
+  <!-- opted to do a script like this instead of media queries so I could keep my code as organized as this possible. index.html just acts as a hub instead of where all three of the experiences live. -->
+  <script type="text/javascript">
+    if (screen.width <= 699){
+        document.location = "pages/mobile/mobile.html";
+      } else if (screen.width >= 700 && screen.width <= 1020) {
+        document.location = "pages/tablet/tablet.html";
+      } else {
+        document.location = "pages/desktop/desktop.html";
+      };
+</script>
   <div id="desktop">
-    <h2>this is index.html</h2>
+    <h2><em>loading...</h2></em>
   </div>
 </body>
 
