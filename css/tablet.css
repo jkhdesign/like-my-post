@@ -17,6 +17,10 @@
   display: none;
 }
 
+#done > a {
+  text-decoration: none;
+}
+
 #subtext {
   position: absolute;
   bottom: 1.5em;

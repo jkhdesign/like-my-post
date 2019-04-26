@@ -19,7 +19,7 @@
     <h2 id="done">done?</h2>
     <div id="canvas"></div>
     <h1>YOUR<br />POST<br />GOT 0<br />LIKES.</h1>
-    <h2 id="subtext">remove it before someone sees</h2>
+    <h2 id="subtext">rub to erase it<br />before someone sees</h2>
   </div>
   <script>
     var board = new DrawingBoard.Board('canvas', {
@@ -29,8 +29,12 @@
       webStorage: false
     });
 
-    document.getElementsByClassName("drawing-board-canvas")[0].addEventListener("mouseup", () => {
-        console.log("mouseup");
+    document.getElementsByClassName("drawing-board-canvas")[0].addEventListener("touchend", () => {
+      $('#done').show();
+    });
+
+    $('#done').on('click',() => {
+      window.location = "end.html?time=" + $("#timer").html();
     });
   </script>
 </body>
