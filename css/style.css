@@ -23,7 +23,7 @@ h1,input {
   font-weight: normal;
   -webkit-text-stroke: 1px white;
   color: transparent;
-  font-size: 10vw;
+  font-size: 10em;
   line-height: 0.8em;
   font-style: italic;
 }

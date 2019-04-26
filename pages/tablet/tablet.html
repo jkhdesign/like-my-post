@@ -11,7 +11,20 @@
 </head>
 
 <body>
-  <h1>tablet.html</h1>
+  <div id="tablet">
+    <h2 id="timer">--:--:--</h2>
+    <h1 id="alert">POST</h1>
+    <h2 id="subtext">go on, share on the internet.</h2>
+  </div>
+  <script>
+    $('#alert').on('click', () => {
+      $('#alert').text("...");
+      $('#subtext').text("posting...");
+      setTimeout(() => {
+        window.location = "canvas.html"
+      }, 2500);
+    });
+  </script>
 </body>
 
 </html>
