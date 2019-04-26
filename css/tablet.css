@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 #timer, #done {
   position: absolute;
   top: 1.5em;
@@ -30,4 +34,17 @@
   width: 75%;
   height: 75%;
   position: absolute;
+}
+
+#p1, #p5 {
+  position: absolute;
+  top: 1.5em;
+}
+
+#p1 {
+  left: 1.5em;
+}
+
+#p5 {
+  right: 1.5em;
 }

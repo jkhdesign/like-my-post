@@ -71,3 +71,7 @@ input:focus {
 #p5 {
   right: 2em;
 }
+
+#about {
+  width: 40%;
+}
